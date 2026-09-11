@@ -10,7 +10,7 @@ MCP servers that users can install into Claude Code.
 
 | Plugin | Provides | Description |
 |--------|----------|-------------|
-| [`accelerator-core`](plugins/accelerator-core) | `/speak-aloud` command + `remote-ssh-ops` skill | Read Claude's replies aloud via TTS (toggleable, incl. Docker→host bridge), and a primitive for safe remote work over SSH. |
+| [`accelerator-core`](plugins/accelerator-core) | `/speak-aloud` command + `remote-ssh-ops` and `secrets-cli` skills | Read Claude's replies aloud via TTS (toggleable, incl. Docker→host bridge), a primitive for safe remote work over SSH, and credential lookup from the local sops+age store before Claude asks you for a token. |
 | [`accelerator-loops`](plugins/accelerator-loops) | `/setup-loops` + `/loop-create` `/loop-run` `/loop-status` `/loop-stop` `/loop-remove` commands | Claude Loops: scaffold a `claude-loops/` workspace and drive repeatable, verified workflows via slash commands. `loop-create` interviews you step by step and writes a fully-filled loop. |
 
 ## Install (for users)

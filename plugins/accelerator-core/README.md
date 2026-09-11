@@ -6,6 +6,7 @@ Core plugin for the **agent-accelerator** marketplace.
 |-----------|--------------|
 | `/speak-aloud` (command) | Toggle & diagnose reading Claude's replies aloud via TTS — macOS / Linux / Windows / Docker (bridged to host). **Off by default**; `/speak-aloud on` enables (instant, no restart). Speaks only the visible reply; latest-wins, barge-in, and only the session you're driving. Backed by `Stop` / `UserPromptSubmit` / `SessionEnd` hooks + `scripts/speak.sh` + `scripts/tts-host-server.py`. |
 | `remote-ssh-ops` (skill) | Safe remote work over SSH: key auth, login-shell command execution, pull/edit/verify/push file editing. |
+| `secrets-cli` (skill) | Ask the store before asking you: look a credential up in the local `secrets` CLI (sops + age), inject it with `secrets exec` so it never reaches the transcript or `ps`, and only prompt you when the name is absent. |
 
 ## Install
 
@@ -29,7 +30,8 @@ accelerator-core/
 │   ├── speak.sh                      # speaker + on/off/status/--active/--cancel/--check
 │   └── tts-host-server.py            # stateful host TTS server (latest-wins + active session)
 └── skills/
-    └── remote-ssh-ops/SKILL.md
+    ├── remote-ssh-ops/SKILL.md
+    └── secrets-cli/SKILL.md
 ```
 
 Run `/speak-aloud` (or `/speak-aloud check`) anytime to see status and what to fix.

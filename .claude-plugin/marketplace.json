@@ -7,18 +7,18 @@
   },
   "metadata": {
     "description": "Agent Accelerator — a Claude Code plugin marketplace",
-    "version": "0.6.0"
+    "version": "0.7.0"
   },
   "plugins": [
     {
       "name": "accelerator-core",
-      "description": "Core Agent Accelerator skills: speak-aloud (read Claude's output via TTS, incl. Docker→host bridge) and remote-ssh-ops (safe remote work over SSH)",
+      "description": "Core Agent Accelerator skills: speak-aloud (read Claude's output via TTS, incl. Docker→host bridge), remote-ssh-ops (safe remote work over SSH) and secrets-cli (look up credentials in the local sops+age store before asking).",
       "source": "./plugins/accelerator-core",
       "author": { "name": "Fei Su" },
       "category": "productivity",
-      "keywords": ["tts", "text-to-speech", "audio", "docker", "ssh", "remote", "automation"],
+      "keywords": ["tts", "text-to-speech", "audio", "docker", "ssh", "remote", "automation", "secrets", "credentials", "sops", "age"],
       "license": "MIT",
-      "version": "0.3.0"
+      "version": "0.4.0"
     },
     {
       "name": "accelerator-loops",

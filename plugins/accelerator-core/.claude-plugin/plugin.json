@@ -1,10 +1,10 @@
 {
   "name": "accelerator-core",
-  "version": "0.3.0",
-  "description": "Core Agent Accelerator skills: speak-aloud (read Claude's output via TTS, incl. Docker→host bridge) and remote-ssh-ops (safe remote work over SSH).",
+  "version": "0.4.0",
+  "description": "Core Agent Accelerator skills: speak-aloud (read Claude's output via TTS, incl. Docker→host bridge), remote-ssh-ops (safe remote work over SSH) and secrets-cli (look up credentials in the local sops+age store before asking).",
   "author": { "name": "Fei Su" },
   "homepage": "https://github.com/acefei/agent-accelerator",
   "repository": "https://github.com/acefei/agent-accelerator",
   "license": "MIT",
-  "keywords": ["tts", "text-to-speech", "audio", "docker", "ssh", "remote", "automation"]
+  "keywords": ["tts", "text-to-speech", "audio", "docker", "ssh", "remote", "automation", "secrets", "credentials", "sops", "age"]
 }
