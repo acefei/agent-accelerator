@@ -14,6 +14,7 @@ MCP servers that users can install into Claude Code.
 | [`accelerator-loops`](plugins/accelerator-loops) | `/setup-loops` + `/loop-create` `/loop-run` `/loop-status` `/loop-stop` `/loop-remove` commands | Claude Loops: scaffold a `claude-loops/` workspace and drive repeatable, verified workflows via slash commands. `loop-create` interviews you step by step and writes a fully-filled loop. |
 | [`simple-english`](https://github.com/AminBlg/SimpleEnglish) | `simple-english` skill + output style | External, re-published at a pinned commit. Write technical text in ASD-STE100 Simplified Technical English. |
 | [`mattpocock-skills`](https://github.com/mattpocock/skills) | grilling, spec/ticket, TDD, code-review and domain-modelling skills | External, re-published at a pinned commit. Matt Pocock's engineering skills. |
+| [`gh-skills`](https://github.com/cli/cli/tree/trunk/skills) | `gh` and `gh-skill` skills | External, re-published at a pinned commit (a skills folder without a plugin manifest, so `strict: false`). GitHub CLI usage for agents. |
 
 ## Install (for users)
 
@@ -26,6 +27,7 @@ claude plugin install accelerator-core@agent-accelerator
 claude plugin install accelerator-loops@agent-accelerator
 claude plugin install simple-english@agent-accelerator
 claude plugin install mattpocock-skills@agent-accelerator
+claude plugin install gh-skills@agent-accelerator
 
 # Verify
 claude plugin list
