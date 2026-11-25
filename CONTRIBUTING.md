@@ -77,7 +77,10 @@ that one marketplace installs everything:
 "source": { "source": "url", "url": "https://github.com/<owner>/<repo>.git", "sha": "<commit>" }
 ```
 
-The upstream repo must have `.claude-plugin/plugin.json` at its root. Set the entry
+The upstream repo must have `.claude-plugin/plugin.json` at its root. For a plugin in a
+subfolder, use `"source": "git-subdir"` with a `path`. For a plain skills folder with no
+`plugin.json`, also set `"strict": false` and list the skill folders in `"skills"`, as the
+`gh-skills` entry does. Set the entry
 `version` to the `version` in that file at the pinned commit. To update, change `sha` and
 `version` together, then bump `metadata.version`.
 
