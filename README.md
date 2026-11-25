@@ -15,6 +15,7 @@ MCP servers that users can install into Claude Code.
 | [`simple-english`](https://github.com/AminBlg/SimpleEnglish) | `simple-english` skill + output style | External, re-published at a pinned commit. Write technical text in ASD-STE100 Simplified Technical English. |
 | [`mattpocock-skills`](https://github.com/mattpocock/skills) | grilling, spec/ticket, TDD, code-review and domain-modelling skills | External, re-published at a pinned commit. Matt Pocock's engineering skills. |
 | [`gh-skills`](https://github.com/cli/cli/tree/trunk/skills) | `gh` and `gh-skill` skills | External, re-published at a pinned commit (a skills folder without a plugin manifest, so `strict: false`). GitHub CLI usage for agents. |
+| [`tokeneconomizer`](https://github.com/microsoft/TokenEconomizer) | hooks + slash commands | External, re-published at a pinned commit. Learns per repository to cut token cost: micro-skills, tool pruning, failure-loop guard. Needs Python 3.10+. |
 
 ## Install (for users)
 
@@ -28,6 +29,7 @@ claude plugin install accelerator-loops@agent-accelerator
 claude plugin install simple-english@agent-accelerator
 claude plugin install mattpocock-skills@agent-accelerator
 claude plugin install gh-skills@agent-accelerator
+claude plugin install tokeneconomizer@agent-accelerator
 
 # Verify
 claude plugin list
