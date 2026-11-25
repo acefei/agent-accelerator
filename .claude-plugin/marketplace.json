@@ -7,7 +7,7 @@
   },
   "metadata": {
     "description": "Agent Accelerator — a Claude Code plugin marketplace",
-    "version": "0.9.0"
+    "version": "0.10.0"
   },
   "plugins": [
     {
@@ -61,6 +61,16 @@
       "category": "development",
       "license": "MIT",
       "version": "2026.11.24"
+    },
+    {
+      "name": "tokeneconomizer",
+      "description": "Cost control for coding agents: micro-skills (repo facts learned from earlier sessions), pruning of tools a repo never uses, and a failure-loop guard. Re-published from microsoft/TokenEconomizer, pinned.",
+      "source": { "source": "git-subdir", "url": "https://github.com/microsoft/TokenEconomizer.git", "path": "plugin", "sha": "fa5604a3673fb3fa8c9932b942dd210e7afb18f3" },
+      "author": { "name": "TokenEconomizer authors (Microsoft Research, UC Berkeley)" },
+      "homepage": "https://github.com/microsoft/TokenEconomizer",
+      "category": "productivity",
+      "license": "MIT",
+      "version": "0.1.0"
     }
   ]
 }
