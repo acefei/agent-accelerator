@@ -68,6 +68,19 @@ The harness sets this to the plugin's installed directory. Reference bundled scr
 assets relative to it — e.g. a hook command of
 `${CLAUDE_PLUGIN_ROOT}/scripts/foo.sh`. Never hard-code absolute paths.
 
+## Re-publish an external plugin
+
+A plugin that lives in another repo is listed with a `url` source and a pinned `sha`, so
+that one marketplace installs everything:
+
+```json
+"source": { "source": "url", "url": "https://github.com/<owner>/<repo>.git", "sha": "<commit>" }
+```
+
+The upstream repo must have `.claude-plugin/plugin.json` at its root. Set the entry
+`version` to the `version` in that file at the pinned commit. To update, change `sha` and
+`version` together, then bump `metadata.version`.
+
 ## Validate and test
 
 ```bash

@@ -12,6 +12,8 @@ MCP servers that users can install into Claude Code.
 |--------|----------|-------------|
 | [`accelerator-core`](plugins/accelerator-core) | `/speak-aloud` command + `remote-ssh-ops` and `secrets-cli` skills | Read Claude's replies aloud via TTS (toggleable, incl. Docker→host bridge), a primitive for safe remote work over SSH, and credential lookup from the local sops+age store before Claude asks you for a token. |
 | [`accelerator-loops`](plugins/accelerator-loops) | `/setup-loops` + `/loop-create` `/loop-run` `/loop-status` `/loop-stop` `/loop-remove` commands | Claude Loops: scaffold a `claude-loops/` workspace and drive repeatable, verified workflows via slash commands. `loop-create` interviews you step by step and writes a fully-filled loop. |
+| [`simple-english`](https://github.com/AminBlg/SimpleEnglish) | `simple-english` skill + output style | External, re-published at a pinned commit. Write technical text in ASD-STE100 Simplified Technical English. |
+| [`mattpocock-skills`](https://github.com/mattpocock/skills) | grilling, spec/ticket, TDD, code-review and domain-modelling skills | External, re-published at a pinned commit. Matt Pocock's engineering skills. |
 
 ## Install (for users)
 
@@ -22,6 +24,8 @@ claude marketplace add agent-accelerator acefei/agent-accelerator
 # Install a plugin
 claude plugin install accelerator-core@agent-accelerator
 claude plugin install accelerator-loops@agent-accelerator
+claude plugin install simple-english@agent-accelerator
+claude plugin install mattpocock-skills@agent-accelerator
 
 # Verify
 claude plugin list
